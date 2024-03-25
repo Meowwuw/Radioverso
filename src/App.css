@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Esto asegura que el padding no afecte el ancho total de los elementos */
+}
+

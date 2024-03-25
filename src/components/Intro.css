@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+
+.intro {
+    font-family: "Bricolage Grotesque", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 175px;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal;
+    background-image:
+        linear-gradient(114.95deg, rgba(235, 0, 255, 0.3) 0%, rgba(0, 0, 0, 0) 38.87%),
+        linear-gradient(180deg, rgba(0, 75, 91, 0.3) 0%, rgba(255, 167, 167, 0.3) 100%),
+        linear-gradient(244.35deg, rgba(255, 178, 106, 0.3) 0%, rgba(54, 118, 177, 0.3) 50.58%, rgba(0, 163, 255, 0.3) 100%),
+        linear-gradient(244.35deg, rgba(255, 255, 255, 0.3) 0%, rgba(0, 112, 137, 0.3) 49.48%, rgba(255, 0, 92, 0.3) 100%),
+        radial-gradient(100% 233.99% at 0% 100%, rgba(109, 59, 0, 0.3) 0%, rgba(143, 255, 0, 0.3) 100%),
+        linear-gradient(307.27deg, rgba(33, 157, 135, 0.3) 0.37%, rgba(147, 195, 46, 0.3) 50.19%, rgba(40, 0, 198, 0.3) 100%),
+        radial-gradient(100% 140% at 100% 0%, rgba(255, 0, 199, 0.3) 0%, rgba(0, 108, 122, 0.3) 49.48%, rgba(118, 0, 0, 0.3) 100%), 
+        url('../assets/intro.jpg');
+    overflow: hidden;
+}
+
+h1.radioverso {
+    font-size: 13em;
+    color: #D3F22A;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: -90px;
+    letter-spacing: 20px;
+}
+
+h2.mas-alla {
+    font-size: 5em;
+    color: #DBED7B;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 10px;
+
+}
+
+.slogan {
+    display: inline;
+    padding: 15px 0;
+    line-height: 1.9em;
+    font-size: 1.4em;
+    padding: 0.1em 0.6em;
+    color: #000000;
+    background-color: #D3F22A;
+}
+
+.slogan-container {
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+    margin-left: 14%;
+}
+
+.btn-contact {
+    display: block;
+    width: max-content;
+    margin-top: 100px;
+    background-color: #D3F22A;
+    border-radius: 50px;
+    color: #000000;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #C0E026;
+}
+
+.btn-contact:hover {
+  animation: scroll-animation 1s ease-in-out;
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveStar {
+    0%, 100% {
+      transform: translateX(0px);
+      opacity: 0; /* Las estrellas comienzan y terminan invisibles */
+    }
+    10%, 90% {
+      opacity: 1; /* Las estrellas son completamente visibles la mayor parte del tiempo */
+    }
+    100% {
+      transform: translateX(300px); /* Las estrellas se mueven 300px hacia la derecha */
+      opacity: 0;
+    }
+  }
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    animation: moveStar 10s linear infinite;
+  }
+
+  @media (max-width: 640px) {
+    .intro {
+      padding-top: 175px;
+      min-height: auto; /* Quita la altura mínima para permitir el ajuste del contenido */
+    }
+  
+    h1.radioverso {
+      font-size: 3em; /* Reducir el tamaño del texto del título */
+      margin-bottom: 0.5em; /* Ajustar el margen inferior */
+      letter-spacing: 0.1em; /* Reducir el espaciado entre letras */
+    }
+  
+    h2.mas-alla {
+      font-size: 1.5em; /* Reducir el tamaño del texto del subtítulo */
+      letter-spacing: 0.05em; /* Reducir el espaciado entre letras */
+    }
+  
+    .slogan {
+      font-size: 0.8em; /* Reducir el tamaño del texto del eslogan */
+      line-height: 1.2em; /* Ajustar el interlineado */
+      padding: 0.5em; /* Ajustar el padding */
+    }
+  
+    .btn-contact {
+      font-size: 0.8em; /* Reducir el tamaño del texto del botón */
+      padding: 8px 16px; /* Ajustar el padding del botón */
+      margin-top: 2em; /* Ajustar el margen superior */
+    }
+  
+    /* Ajustar el tamaño de las estrellas de fondo */
+    .star {
+      width: 1px;
+      height: 2px;
+    }
+  }
+  
