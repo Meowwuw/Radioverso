@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css'; // Asegúrate de que el path a tu archivo CSS es correcto
+import './About.css'; 
 
 const About = () => {
   return (

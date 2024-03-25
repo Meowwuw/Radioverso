@@ -98,13 +98,13 @@ h2.mas-alla {
 @keyframes moveStar {
     0%, 100% {
       transform: translateX(0px);
-      opacity: 0; /* Las estrellas comienzan y terminan invisibles */
+      opacity: 0; 
     }
     10%, 90% {
-      opacity: 1; /* Las estrellas son completamente visibles la mayor parte del tiempo */
+      opacity: 1; 
     }
     100% {
-      transform: translateX(300px); /* Las estrellas se mueven 300px hacia la derecha */
+      transform: translateX(300px); 
       opacity: 0;
     }
   }
@@ -121,33 +121,32 @@ h2.mas-alla {
   @media (max-width: 640px) {
     .intro {
       padding-top: 175px;
-      min-height: auto; /* Quita la altura mínima para permitir el ajuste del contenido */
+      min-height: auto; 
     }
   
     h1.radioverso {
-      font-size: 3em; /* Reducir el tamaño del texto del título */
-      margin-bottom: 0.5em; /* Ajustar el margen inferior */
-      letter-spacing: 0.1em; /* Reducir el espaciado entre letras */
+      font-size: 3em;
+      margin-bottom: 0.5em; 
+      letter-spacing: 0.1em; 
     }
   
     h2.mas-alla {
-      font-size: 1.5em; /* Reducir el tamaño del texto del subtítulo */
-      letter-spacing: 0.05em; /* Reducir el espaciado entre letras */
+      font-size: 1.5em; 
+      letter-spacing: 0.05em;
     }
   
     .slogan {
-      font-size: 0.8em; /* Reducir el tamaño del texto del eslogan */
-      line-height: 1.2em; /* Ajustar el interlineado */
-      padding: 0.5em; /* Ajustar el padding */
+      font-size: 0.8em; 
+      line-height: 1.2em; 
+      padding: 0.5em; 
     }
   
     .btn-contact {
-      font-size: 0.8em; /* Reducir el tamaño del texto del botón */
-      padding: 8px 16px; /* Ajustar el padding del botón */
-      margin-top: 2em; /* Ajustar el margen superior */
+      font-size: 0.8em; 
+      padding: 8px 16px;
+      margin-top: 2em; 
     }
   
-    /* Ajustar el tamaño de las estrellas de fondo */
     .star {
       width: 1px;
       height: 2px;

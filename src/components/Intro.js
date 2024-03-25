@@ -12,14 +12,14 @@ const Intro = () => {
     });
   }, []);
 
-  const numberOfStars = 100; // Ajusta esto por el número de estrellas que desees
+  const numberOfStars = 100; 
   const stars = Array.from({ length: numberOfStars }, (_, index) => (
     <div key={index} className="star" />
   ));
 
   return (
     <div className="intro">
-      {/* Renderizar estrellas aquí */}
+      {}
       {stars}
       <h1 className="radioverso">RADIOVERSO</h1>
       <h2 className="mas-alla">MÁS ALLÁ DE TUS OÍDOS</h2>
